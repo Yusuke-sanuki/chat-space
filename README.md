@@ -20,7 +20,7 @@
 - has_many :messages
 - has_many :members
 
-## groupテーブル
+## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false, unique: true|
@@ -30,7 +30,7 @@
 - has_many :users
 - has_many :messages
 
-## messageテーブル
+## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
 |body|text|
