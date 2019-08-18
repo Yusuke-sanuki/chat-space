@@ -1,0 +1,54 @@
+= render 'flash-box/flash-box'
+
+.wrapper
+
+  = render 'chat-side/chat-side'
+
+  .chat-main
+    .header
+      .header__left-box
+        .header__left-box__current-group
+          グループ名
+          %ul.header__left-box__member-list
+            Member：
+            %li.header__left-box__member-list__member
+              メンバー名
+            %li.header__left-box__member-list__member
+              メンバー名
+            %li.header__left-box__member-list__member
+              メンバー名
+      .header__edit-btn
+        = link_to 'Edit' , "#" 
+    .messages
+      .message
+        .message__upper-info
+          .message__upper-info__user-name
+            メンバー
+          .message__upper-info__date
+            2019/08/18(Sun) 17:38:23
+        .message__text
+          メッセージ
+      .message
+        .message__upper-info
+          .message__upper-info__user-name
+            メンバー
+          .message__upper-info__date
+            2019/08/18(Sun) 17:38:23
+        .message__text
+          メッセージ
+      .message
+        .message__upper-info
+          .message__upper-info__user-name
+            メンバー
+          .message__upper-info__date
+            2019/08/18(Sun) 17:38:23
+        .message__text
+          メッセージ
+    .form
+      %form
+        .input-box
+          %input.input-box__text{name: "message[content]", placeholder: "type a message", type: "text"}
+          %label.input-box__image{for: "message_image"}
+            %i.fa.fa-image
+            %input.input-box__image__file{name: "message[image]", type: "file"}
+        %input.submit-btn{"data-disable-with": "Send", name: "commit", type: "submit", value: "Send"}
