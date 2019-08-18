@@ -48,8 +48,8 @@
     .form
       %form
         .input-box
-          %input.input-box__text{:name => "message[content]", :placeholder => "type a message", :type => "text"}/
-          %label.input-box__image{:for => "message_image"}
+          %input.input-box__text{name: "message[content]", placeholder: "type a message", type: "text"}
+          %label.input-box__image{for: "message_image"}
             %i.fa.fa-image
-            %input.input-box__image__file{:name => "message[image]", :type => "file"}/
-        %input.submit-btn{"data-disable-with" => "Send", :name => "commit", :type => "submit", :value => "Send"}/
+            %input.input-box__image__file{name: "message[image]", type: "file"}
+        %input.submit-btn{"data-disable-with": "Send", name: "commit", type: "submit", value: "Send"}
